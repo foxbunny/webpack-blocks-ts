@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`add loader options 1`] = `
+Object {
+  "module": Object {
+    "rules": Array [
+      Object {
+        "loader": "ts-loader",
+        "options": Object {
+          "silent": true,
+        },
+        "test": /\\\\\\.\\(ts\\|tsx\\)\\$/,
+      },
+    ],
+  },
+  "plugins": Array [],
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+      ".tsx",
+    ],
+  },
+}
+`;
+
+exports[`default options 1`] = `
+Object {
+  "module": Object {
+    "rules": Array [
+      Object {
+        "loader": "ts-loader",
+        "options": undefined,
+        "test": /\\\\\\.\\(ts\\|tsx\\)\\$/,
+      },
+    ],
+  },
+  "plugins": Array [],
+  "resolve": Object {
+    "extensions": Array [
+      ".ts",
+      ".tsx",
+    ],
+  },
+}
+`;

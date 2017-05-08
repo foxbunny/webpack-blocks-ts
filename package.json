@@ -1,0 +1,19 @@
+{
+  "name": "webpack-blocks-ts",
+  "version": "1.0.0",
+  "description": "TypeScript configuration for webpack-blocks using ts-loader",
+  "main": "index.js",
+  "repository": "https://github.com/foxbunny/webpack-blocks-ts",
+  "author": "Hajime Yamasaki Vukelic <hayavuk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^20.0.0",
+    "webpack-blocks": "^1.0.0-alpha"
+  },
+  "dependencies": {
+    "ts-loader": "^2.0.3"
+  }
+}
