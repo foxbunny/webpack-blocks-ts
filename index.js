@@ -8,7 +8,7 @@ function ts(options = {}) {
   return (context, util) => util.merge({
     resolve: {
       extensions: ['.ts', '.tsx'],
-    }
+    },
     module: {
       rules: [
         Object.assign({
