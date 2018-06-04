@@ -10,10 +10,10 @@
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^20.0.0",
-    "webpack-blocks": "^1.0.0-alpha"
+    "jest": "^23.1.0",
+    "webpack-blocks": "^1.0.0"
   },
   "dependencies": {
-    "ts-loader": "^2.0.3"
+    "ts-loader": "^4.3.1"
   }
 }

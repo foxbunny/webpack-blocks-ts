@@ -4,21 +4,20 @@
  * @see https://github.com/TypeStrong/ts-loader
  */
 
-function ts(options) {
-  return context => prevConfig => Object.assign(prevConfig, {
-    resolve: Object.assign(prevConfig.resolve || {}, {
-      extensions: ((prevConfig.resolve || {}).extensions || [])
-        .concat(['.ts', '.tsx', '.js'])
-    }),
-    module: Object.assign(prevConfig.module || {}, {
-      rules: ((prevConfig.module || {}).rules || []).concat([
-        {
-          test: context.fileType('application/x-typescript'),
+function ts(options = {}) {
+  return (context, util) => util.merge({
+    resolve: {
+      extensions: ['.ts', '.tsx'],
+    },
+    module: {
+      rules: [
+        Object.assign({
+          test: /\.(ts|tsx)$/,
           loader: 'ts-loader',
-          options: options
-        }
-      ]),
-    }),
+          options,
+        }, context.match),
+      ],
+    },
   });
 }
 
