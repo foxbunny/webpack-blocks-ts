@@ -12,6 +12,17 @@ particular, it does not work for
 [vue-loader](https://github.com/vuejs/vue-loader). This package provides an
 alternative solution that addresses this issue.
 
+## Compatibility
+
+webpack-blocks-ts is compabitle with Webpack 4.0 and webpack-blocks 1.0. Use the
+older 1.0.0 version of this package if you need to work with older versions of
+webpack-blocks.
+
+## Project status
+
+This project is currently looking for a maintainer. PRs are accepted, and merged
+without too much scrutiny.
+
 ## Installation
 
 You can install webpack-blocks-ts using npm:
