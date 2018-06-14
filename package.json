@@ -14,6 +14,6 @@
     "webpack-blocks": "^1.0.0"
   },
   "dependencies": {
-    "ts-loader": "^4.3.1"
+    "ts-loader": "^4.4.1"
   }
 }
